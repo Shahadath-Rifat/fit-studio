@@ -79,6 +79,9 @@ nav ul li + li {
     overflow: hidden;
     box-shadow: 0px 5px 5px rgb(0 0 0 / 0.5);
 }
+#banner h2 {
+    margin-top: 220px;
+}
 
 h2 {
     margin-top: 220px;
@@ -119,14 +122,19 @@ footer p{
     text-align: center;
 }
   
-h2 {
+ h2 {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-top: 20px;
 }
+
+.container-about h2 + p {
+    margin-top: 20px;
+}
+
   
 p {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
     color: var(--app-white);
@@ -138,6 +146,10 @@ p {
     padding: 80px 0;
 }
   
+#pricing .pricing-container {
+    margin-top: 70px;
+}
+
 .pricing-container {
     display: flex;
     justify-content: center;
@@ -192,4 +204,24 @@ li {
 .button:hover {
     background-color: #c2185b;
 }
+ 
+/*   Responsive Design*/
+  
+  /* 992px and down 
+  @media (max-width: 992px) {
+    body { background-color: var(--app-purple); }
+    h1 { font-size: 50px; }
+  }
+  
+  /* 768px and down 
+  @media (max-width: 768px) {
+    body { background-color: var(--app-green); }
+    h1 { font-size: 45px; }
+  }
+  
+  /* 480px and down 
+  @media (max-width: 480px) {
+    body { background-color: var(--app-blue); }
+    h1 { font-size: 40px; }
+  }
   
