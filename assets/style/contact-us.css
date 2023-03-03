@@ -84,7 +84,7 @@ main {
 footer {
   height: 65px;
   background-color:var(--app-dark-bg);
-  text-align: right;
+  text-align: center;
 }
 
 footer p {
