@@ -14,8 +14,40 @@
         <script src="./assets/script/contact-us.js" defer></script>
     </head>
     <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header>
+            <div class="container flex">
+                <div class="title">
+                    <h1>Fit Studio</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./contact-us.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+          </header> 
+          <main>
+            <div class="container">
+              <form id="contact-form">
+                <p>
+                  <input type="text" placeholder="Full Name" id="fullname" required>
+                </p>
+                <p>
+                  <input type="contact" placeholder="Phone" id="phone" pattern="[0-9]{10}" required>
+                </p>
+                <p>
+                  <input type="e-mail" placeholder="E-mail" id="email" required>
+                </p>
+                <p>
+                  <textarea placeholder="Message" id="message" required></textarea>
+                </p>
+                <input type="submit" value="SUBMIT">
+              </form>
+            </div>
+          </main>
+            <footer>
+              <p> &copy; 2023 Fit Studio</p>
+            </footer>
     </body>
 </html>
