@@ -1,1 +1,108 @@
 @import url(reset.css);
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-red: #ff3c57;
+    --app-light-gray: #f9f9f9;
+    --app--purple: #7339ac;
+    --app-white:#fff;
+    --app-lightgrey: #9a9a9a ;
+    --app-black:#000 ;
+}
+
+
+header {
+    background-color:var(--app-dark-bg);
+    margin: 10;
+    height: 65px;
+}
+
+header .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h1 {
+    font-size: 27px;
+    text-transform: uppercase;
+    color:var(--app-white);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 56px;
+    text-align:right ;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+}
+
+nav ul li a {
+    color:var(--app-white);
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #0659ac;
+}
+
+nav ul li + li {
+    margin-left: 20px;
+}
+
+#banner {
+    background: #fff url(../image/victor-freitas-WvDYdXDzkhs-unsplash.jpg) center center / cover no-repeat;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 0.5);
+}
+
+h2 {
+    margin-top: 100px;
+    font-size: 45px;
+    color:var(--app-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    overflow: hidden; 
+    height:calc(100vh - 60px -60px);
+}
+
+footer{
+    height: 65px;
+    background-color:var(--app-dark-bg);
+    text-align: right;
+}
+
+footer p{
+    font-size: 18px;
+    line-height: 60px;
+    color:var(--app-white);
+}
