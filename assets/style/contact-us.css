@@ -5,12 +5,29 @@
   margin-inline: auto;
 }
 
+:root {
+  --app-dark-bg: #1a1d28;
+  --app-green: #33ab4e;
+  --app-purple: #833cff;
+  --app-orange: #ff833c;
+  --app-blue: #3c57ff;
+  --app-blue-hover: #364ee6;
+  --app-red: #ff3c57;
+  --app-light-gray: #f9f9f9;
+  --app--purple: #7339ac;
+  --app-white:#fff;
+  --app-lightgrey: #9a9a9a;
+  --app-black:#000;
+}
+
 body {
-  background-color: #f5f6f7;
+  background-color: var(--app-black);
 }
 
 header {
-  background-color: #7a53d4;
+  background-color:var(--app-dark-bg);
+  margin: 10;
+  height: 65px;
 }
 
 header .flex {
@@ -19,17 +36,21 @@ header .flex {
 }
 
 .title h1 {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  letter-spacing: 0.2px;
+  font-size: 29px;
   text-transform: uppercase;
+  color:var(--app-white);
+  font-weight: 600;
+  letter-spacing: 0.2px;
   line-height: 56px;
+  text-align:right ;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
 }
 
 nav ul {
   list-style: none;
   font-size: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul li {
@@ -38,16 +59,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
-  font-size: 17px;
-  font-weight: 600;
+  color:var(--app-white);
+  font-size: 22px;
+  font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.2px;
   transition: color 0.25s ease-in-out;
 }
 
 nav ul li a:hover {
-color: #007fff;
+  color: var(--app-blue-hover);
 }
 
 nav ul li + li {
@@ -56,36 +77,27 @@ nav ul li + li {
 
 main {
   padding: 100px 0;
-  height: calc(100vh - 62px - 60px );
+  height: calc(100vh - 70px - 60px);
   overflow: hidden;
 }
 
-.title h1 {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  line-height: 56px;
-  text-align: center;
+footer {
+  height: 65px;
+  background-color:var(--app-dark-bg);
+  text-align: right;
 }
 
 footer p {
-  font-size: 15px;
-  text-align: right ;
-  margin-right: 100px;
-  margin-top: 10px;
-}
-
-footer {
-  background-color: #fff;
-  padding-top: 10px ;
-  height: 60px;
+  font-size: 22px;
+  line-height: 60px;
+  color:var(--app-white);
+  font-family: 'Roboto', sans-serif;
 }
 
 form {
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 input[type=text] {
@@ -94,6 +106,7 @@ input[type=text] {
   border: 1px solid #000;
   padding: 0 15px 0 38px;
   font-size: 18px;
+  color: var(--app-white);
   font-weight: 400;
   background: rgb(255 255 255 / 0.1) url("../image/user.png") no-repeat 16px 50%;
   background-size: 17px;
@@ -108,23 +121,24 @@ input[type=submit] {
   width: 120px;
   height: 46px;
   text-align: center;
-  background-color:#364ee6;
+  background-color:var(--app-blue-hover);
   border-radius: 50px;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.4px;
-  color:  #fff;
+  letter-spacing: 0.8px;
+  color: var(--app-white);
   transition: background-color 0.25s ease-in-out;
 }
 
 input[type=submit]:hover {
-  background-color: #ff0000;
+  background-color: var(--app-red);
 }
 
 input[type=contact] {
   width: 320px;
   height: 46px;
+  color: var(--app-white);
   margin-top: 10px;
   border: 1px solid #000;
   padding: 0 15px 0 38px;
@@ -138,6 +152,7 @@ input[type=contact] {
 input[type=e-mail] {
   width: 320px;
   height: 46px;
+  color: var(--app-white);
   margin-top: 10px;
   border: 1px solid #000;
   padding: 0 15px 0 38px;
@@ -155,6 +170,7 @@ textarea {
   border: 1px solid #000;
   padding: 50px 15px 0 38px;
   font-size: 18px;
+  color: var(--app-white);
   font-weight: 400;
   background: url("../image/message.png") no-repeat 16px 50% , rgb(255 255 255 / 0.1);
   background-size: 15px;
