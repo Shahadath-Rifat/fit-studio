@@ -81,7 +81,7 @@ nav ul li + li {
 }
 
 h2 {
-    margin-top: 100px;
+    margin-top: 220px;
     font-size: 45px;
     color:var(--app-white);
     display: flex;
@@ -92,7 +92,7 @@ h2 {
 
 main {
     overflow: hidden; 
-    height:calc(100vh - 60px -60px);
+    height:calc(100vh - 70px -60px);
 }
 
 footer{
