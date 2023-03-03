@@ -27,22 +27,22 @@
                 </nav>
             </div>
           </header> 
-        <main>
+          <main>
             <div class="container">
-              <form>
+              <form id="contact-form">
                 <p>
-                  <input type="text" placeholder="Full Name">
+                  <input type="text" placeholder="Full Name" id="fullname" required>
                 </p>
                 <p>
-                  <input type="contact" placeholder="Phone">
+                  <input type="contact" placeholder="Phone" id="phone" pattern="[0-9]{10}" required>
                 </p>
                 <p>
-                  <input type="e-mail" placeholder="E-mail">
+                  <input type="e-mail" placeholder="E-mail" id="email" required>
                 </p>
                 <p>
-                  <input type="message" placeholder="Message">
+                  <textarea placeholder="Message" id="message" required></textarea>
                 </p>
-                <input type="button" value="SUBMIT">
+                <input type="submit" value="SUBMIT">
               </form>
             </div>
           </main>
