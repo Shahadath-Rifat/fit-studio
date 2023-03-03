@@ -1,6 +1,10 @@
 'use strict';
 
 const form = document.getElementById('contact-form');
+const fullnameInput = document.getElementById('fullname');
+const phoneInput = document.getElementById('phone');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
 
 form.addEventListener('submit', (event) => {
 event.preventDefault();
@@ -10,10 +14,6 @@ if (validateForm()) {
 });
 
 function validateForm() {
-const fullnameInput = document.getElementById('fullname');
-const phoneInput = document.getElementById('phone');
-const emailInput = document.getElementById('email');
-const messageInput = document.getElementById('message');
 
 // Regular expression to validate email format
 const emailExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
