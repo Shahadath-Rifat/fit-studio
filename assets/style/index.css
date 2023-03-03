@@ -102,7 +102,32 @@ footer{
 }
 
 footer p{
-    font-size: 18px;
+    font-size: 22px;
     line-height: 60px;
     color:var(--app-white);
 }
+
+#about-us {
+    background-color:var(--app-dark-bg);
+    padding: 50px 0;
+}
+  
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+  
+p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: var(--app-white);
+}
+  
