@@ -33,7 +33,7 @@ header .flex {
 }
 
 .title h1 {
-    font-size: 27px;
+    font-size: 29px;
     text-transform: uppercase;
     color:var(--app-white);
     font-weight: 600;
@@ -129,5 +129,63 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
     color: var(--app-white);
+}
+
+#pricing {
+    background-color:#24292c;
+    padding: 80px 0;
+}
+  
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+  
+.pricing-plan {
+    background-color:#191c1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 20px;
+    padding: 40px;
+    flex-basis: 350px;
+}
+  
+.pricing-plan h3 {
+    font-size: 25px;
+    margin-top: 0;
+    color:var(--app-white); 
+}
+  
+.price {
+    font-size: 36px;
+    margin: 20px 0;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    color:var(--app-white); 
+    font-size: 18px;
+}
+  
+li {
+    margin-bottom: 10px;
+}
+  
+.button {
+    background-color: #e91e63;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 30px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+  
+.button:hover {
+    background-color: #c2185b;
 }
   
