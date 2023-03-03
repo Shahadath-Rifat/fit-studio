@@ -83,7 +83,8 @@ nav ul li + li {
 h2 {
     margin-top: 220px;
     font-size: 45px;
-    color:var(--app-white);
+    font: bold;
+    color:#fff;
     display: flex;
     justify-content: center;
     align-items: center;
