@@ -208,21 +208,97 @@ li {
  
 /*   Responsive Design*/
   
-  /* 992px and down 
-  @media (max-width: 992px) {
-    body { background-color: var(--app-purple); }
-    h1 { font-size: 50px; }
-  }
+/* 992px and down */
+@media (max-width: 1000px) {
+    .title h1 {
+        font-size: 27px;
+    }
+    nav ul li a {
+        font-size: 19px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .container-about h2 {
+        font-size: 29px;
+    }
+    .container-about p {
+        font-size: 17px;
+        margin: 9px;
+    }
+    .pricing-container{
+        flex-direction:column;
+        align-items: center; 
+    }
+    .pricing-plan {
+        flex: 1; /* As i have 3 boxes, Thats why it is not filling space equally */
+        margin: 10px 0;
+    }
+    ul {
+        font-size: 15px;
+    }
+    footer p{
+        font-size: 19px;
+    }    
+}
+    
+/* 768px and down */
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 25px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 29px;
+    }
+    .container-about h2 {
+        font-size: 27px;
+    }
+    .container-about p {
+        font-size: 15px;
+        margin: 5px;
+    }
+    .pricing-container{
+        flex-direction:column;
+        align-items: center; 
+    }
+    ul {
+        font-size: 13px;
+    }
+    footer p{
+        font-size: 17px;
+    }    
+}
   
-  /* 768px and down 
-  @media (max-width: 768px) {
-    body { background-color: var(--app-green); }
-    h1 { font-size: 45px; }
-  }
-  
-  /* 480px and down 
-  @media (max-width: 480px) {
-    body { background-color: var(--app-blue); }
-    h1 { font-size: 40px; }
-  }
+/* 480px and down */
+ @media (max-width: 480px) {
+    .title h1 {
+        font-size: 23px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .container-about h2 {
+        font-size: 25px;
+    }
+    .container-about p {
+        font-size: 14px;
+        margin: 5px;
+    }
+    .pricing-container{
+        flex-direction:column;
+        align-items: center; 
+    }
+    ul {
+        font-size: 12px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+}
   
