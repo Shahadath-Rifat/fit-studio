@@ -1,10 +1,13 @@
-## Welcome 
+### Hello there
+
+Welcome to our collaborative project! This project was created by Shahadath Hussain Rifat and Asif Ahmed Bhuyian to create a responsive Gym website named 'Fit Studio' . We are excited to share our progress with you and hope you enjoy following along.
+
 
 
 ### Demo
 
 
-Click [here]() to test the application
+Click [here](https://shahadath-rifat.github.io/fit-studio/) to test the application
 
 
 <br/>
