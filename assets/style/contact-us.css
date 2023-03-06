@@ -95,7 +95,6 @@ footer p {
 }
 
 form {
-  margin-top: 20px;
   font-size: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -176,3 +175,6 @@ textarea {
   background-size: 15px;
   transition: border-color 0.25s ease-in-out;
 }
+
+
+
