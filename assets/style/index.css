@@ -23,7 +23,7 @@
 
 header {
     background-color:var(--app-dark-bg);
-    margin: 10;
+    margin: 15;
     height: 65px;
 }
 
@@ -80,10 +80,16 @@ nav ul li + li {
     box-shadow: 0px 5px 5px rgb(0 0 0 / 0.5);
 }
 
+#banner h2 {
+    margin-top: 300px;
+    font-size: 60px;
+}
+
 h2 {
     margin-top: 220px;
     font-size: 45px;
-    color:var(--app-white);
+    font: bold;
+    color:#fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,14 +125,19 @@ footer p{
     text-align: center;
 }
   
-h2 {
+ h2 {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-top: 20px;
 }
+
+.container-about h2 + p {
+    margin-top: 20px;
+}
+
   
 p {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
     color: var(--app-white);
@@ -138,6 +149,10 @@ p {
     padding: 80px 0;
 }
   
+#pricing .pricing-container {
+    margin-top: 70px;
+}
+
 .pricing-container {
     display: flex;
     justify-content: center;
@@ -191,5 +206,110 @@ li {
   
 .button:hover {
     background-color: #c2185b;
+}
+ 
+/*   Responsive Design*/
+  
+/* 1000px and down */
+@media (max-width: 1000px) {
+    .title h1 {
+        font-size: 27px;
+    }
+    nav ul li a {
+        font-size: 19px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #banner h2 {
+        font-size: 50px;
+    }
+    .container-about h2 {
+        font-size: 29px;
+    }
+    .container-about p {
+        font-size: 17px;
+        margin: 9px;
+    }
+    .pricing-container{
+        flex-direction:column;
+        align-items: center; 
+    }
+    .pricing-plan {
+        flex: 1; /* As i have 3 boxes, Thats why it is not filling space equally */
+        margin: 10px 0;
+    }
+    ul {
+        font-size: 15px;
+    }
+    footer p{
+        font-size: 19px;
+    }    
+}
+    
+/* 768px and down */
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 25px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 29px;
+    }
+    #banner h2 {
+        font-size: 37px;
+    }
+    .container-about h2 {
+        font-size: 27px;
+    }
+    .container-about p {
+        font-size: 15px;
+        margin: 5px;
+    }
+    .pricing-container{
+        flex-direction:column;
+        align-items: center; 
+    }
+    ul {
+        font-size: 13px;
+    }
+    footer p{
+        font-size: 17px;
+    }    
+}
+  
+/* 480px and down */
+ @media (max-width: 480px) {
+    .title h1 {
+        font-size: 23px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    #banner h2 {
+        font-size: 31px;
+    }
+    .container-about h2 {
+        font-size: 25px;
+    }
+    .container-about p {
+        font-size: 14px;
+        margin: 5px;
+    }
+    .pricing-container{
+        flex-direction:column;
+        align-items: center; 
+    }
+    ul {
+        font-size: 12px;
+    }
+    footer p{
+        font-size: 15px;
+    }
 }
   
